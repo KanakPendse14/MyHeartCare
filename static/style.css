@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* user-select: none; */
+
 }
 .bg-img{
   background: url('/static/media/bg.jpg');
@@ -268,75 +268,221 @@ i span{
 
 /* homepage */
 
-
+/* Navbar styles */
 body {
+  background-image: url('/static/media/bgimage1.png'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif; /* Default font family */
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
+/* Navbar styles */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
-.navbar a {
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
   float: left;
+}
+
+.navbar ul li a {
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.navbar a.right {
-  float: right;
-}
-
-.navbar a:hover {
+.navbar ul li a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.search-container {
+/* Container styles */
+.container {
+  max-width: 100%;
+  margin: 70px auto 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container h1 {
   text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+}
+
+.conditions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.condition {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px 20px 10px;
 }
 
-.search-container input[type=text] {
-  padding: 10px;
-  margin-top: 10px;
-  width: 50%;
+.condition h2 {
+  color: #333;
 }
 
-.search-container button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background: #333;
+.condition p {
+  color: #666;
+}
+
+.condition-btn {
+  background-color: #007bff;
   color: white;
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.content {
-  margin-top: 60px; /* To create space so content isn't hidden behind navbar */
+.condition-btn:hover {
+  background-color: #0056b3;
+}
+
+.analyzer {
+  text-align: center;
+  width: 100%;
+}
+
+.analysis {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analysis h3 {
+  color: #333;
+}
+
+.analysis p {
+  color: #666;
+}
+
+.analyze-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer styles */
+.footer {
+  bottom: 0%;
+  position:relative;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.filters {
+.footer .contact-us {
   flex: 1;
+  margin-right: 20px;
+  text-align: left; /* Adjust text alignment */
 }
 
-.job-options {
-  flex: 3;
+.footer .contact-us h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.filters h2, .job-options h2 {
-  margin-top: 0;
+.footer .contact-us p {
+  color: #ccc;
+  margin-bottom: 10px;
 }
+
+.footer .contact-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .contact-us ul li {
+  margin-bottom: 5px;
+}
+
+.footer .contact-us ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer .chat-widget,
+.footer .map {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+/* Example styles for chat widget placeholder */
+#chat-widget-placeholder {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Example styles for map placeholder */
+#map-placeholder {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  height: 200px;
+}
+
+/* End of homepage */
 

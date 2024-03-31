@@ -1,0 +1,217 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Backend with HTML & CSS Frontend</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML & CSS Frontend</h1>
+        <a href="/upload/image"><button>data</button> </a>
+        <button id="fetchDataBtn">Fetch Data from Flask Backend</button>
+        <p id="message"></p>
+    </div>
+    <script src="static/scripts.js"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="hospitalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" ng-controller="MainController">
+        <h1>Welcome to Our Hospital</h1>
+        <div class="sub-container">
+            <h2>Check your ECG's Or health with Our AI</h2>
+            <p>"Experience the future of healthcare with our cutting-edge AI technology. Check your ECG or overall health status effortlessly, harnessing the power of artificial intelligence for accurate assessments. Take control of your well-being and make informed decisions with confidence."</p>
+            <a href="#analyzer"><button class="data-btn">Go to Analyzer</button></a>
+        </div>
+        <div class="sub-container">
+            <h2>Know About US</h2>
+            <p>AI model to predict you heart health</p>
+            <button id="analyze-btn">Know more</button>
+        </div>
+        <div id="analyzer" class="analyzer">
+            <h2>Analyzer</h2>
+            <div class="analysis">
+                <h3>Check for Blockages</h3>
+                <p>Analyzer description...</p>
+                <a href="/upload/image"><button class="analyze-btn">Analyze</button></a>
+                
+            </div>
+            <div class="analysis">
+                <h3>Diabetes Prediction</h3>
+                <p>Analyzer description...</p>
+                <button class="analyze-btn">Analyze</button>
+            </div>
+            <div class="analysis">
+                <h3>Predict Your Heart Health</h3>
+                <p>Analyzer description...</p>
+                <button class="analyze-btn">Analyze</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>If you have any queries, please feel free to contact us:</p>
+                <ul>
+                    <li>Email: info@examplehospital.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>Address: 123 Hospital Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="chat-widget">
+
+                <div id="chat-widget-placeholder">
+             
+                    Chat Widget Placeholder
+                </div>
+            </div>
+            <div class="map">
+
+                <div id="map-placeholder">
+          
+                    Map Placeholder
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="hospitalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartCareAnalysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#analyzer">Services</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" ng-controller="MainController">
+        <h1>Welcome to Our Hospital</h1>
+        <div class="sub-container">
+            <h2>Check your ECG's Or health with Our AI</h2>
+            <p>"Experience the future of healthcare with our cutting-edge AI technology. Check your ECG or overall health status effortlessly, harnessing the power of artificial intelligence for accurate assessments. Take control of your well-being and make informed decisions with confidence."</p>
+            <a href="#analyzer"><button class="analyze-btn">Go to Analyzer</button></a>
+        </div>
+        <div class="sub-container">
+            <h2>Know About US</h2>
+            <p>AI model to predict you heart health</p>
+            <button id="analyze-btn">Know more</button>
+        </div>
+
+    <div class="container" ng-controller="MainController">
+        
+        <div class="conditions">
+            <div class="condition">
+                <h2>Heart Blockages</h2>
+                <p>Heart blockages, commonly referred to as coronary artery disease (CAD), occur when the blood vessels supplying the heart with oxygen and nutrients become narrowed or blocked by the buildup of fatty deposits called plaque. This narrowing can restrict blood flow to the heart, leading to symptoms like chest pain (angina) or, in severe cases, heart attack. Effective management of heart blockages involves lifestyle changes, medications, and sometimes procedures like angioplasty or bypass surgery to restore blood flow to the heart muscle.</p>
+                <button class="condition-btn">Learn More</button>
+            </div>
+            <div class="condition">
+                <h2>Heart Attack</h2>
+                <p>
+                    A heart attack, also known as a myocardial infarction (MI), happens when the blood flow to a part of the heart is blocked for an extended period, usually due to a clot in one of the coronary arteries. This blockage deprives the heart muscle of oxygen and nutrients, causing the affected tissue to die. Symptoms of a heart attack can include chest pain or discomfort, shortness of breath, nausea, sweating, and lightheadedness. Prompt medical attention is crucial to minimize damage to the heart and improve the chances of survival. Treatment may involve medications, procedures like angioplasty or stent placement, and lifestyle changes to prevent future heart events.</p>
+                <button class="condition-btn">Learn More</button>
+            </div>
+            <div class="condition">
+                <h2>How high Blood suger affects your heart</h2>
+                <p>High blood sugar, commonly associated with diabetes, poses significant risks to heart health. It can lead to the development of atherosclerosis, a condition where plaque builds up in the arteries, narrowing them and impeding blood flow to the heart. Additionally, elevated blood sugar levels contribute to hypertension, increasing the workload on the heart and raising the risk of cardiovascular problems. Moreover, high blood sugar damages the inner lining of blood vessels, leading to endothelial dysfunction, which disrupts blood flow regulation. </p>
+                <button class="condition-btn">Learn More</button>
+            </div>
+        </div>
+        <div id="analyzer" class="analyzer">
+            <h2>Analyzer</h2>
+            <div class="analysis">
+                <h3>Check for Blockages</h3>
+                <p>Analyzer description...</p>
+                <a href="/upload/image"><button class="analyze-btn">Analyze</button></a>
+                
+            </div>
+            <div class="analysis">
+                <h3>Diabetes Prediction</h3>
+                <p>Analyzer description...</p>
+                <a href="/diabetes_predict"><button class="analyze-btn">Analyze</button></a>
+
+                
+            </div>
+            <div class="analysis">
+                <h3>Predict Your Heart Health</h3>
+                <p>Analyzer description...</p>
+                <button class="analyze-btn">Analyze</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>If you have any queries, please feel free to contact us:</p>
+                <ul>
+                    <li>Email: info@examplehospital.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>Address: 123 Hospital Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="chat-widget">
+                <!-- Embedded chat widget code goes here -->
+                <!-- Replace the placeholder with your chat widget code -->
+                <div id="chat-widget-placeholder">
+                    <!-- Example placeholder content -->
+                    Chat Widget Placeholder
+                </div>
+            </div>
+            <div class="map">
+                <!-- Embedded map code goes here -->
+                <!-- Replace the placeholder with your map code -->
+                <div id="map-placeholder">
+                    <!-- Example placeholder content -->
+                    Map Placeholder
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

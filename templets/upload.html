@@ -1,5 +1,5 @@
 <!-- frontend/templates/upload.html -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,4 +14,82 @@
         <button type="submit">Upload</button>
     </form>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Link to your CSS file -->
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/home/page">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div id="upload-container" style="max-width: 600px; margin: 100px auto; padding: 20px; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+        <h1 style="color: #333; font-size: 24px; margin-bottom: 20px;">Analyze your ECG with our AI model</h1>
+        
+            <h2 style="color: #333; font-size: 24px; margin-bottom: 20px;text-align: left;">Instructions: </h2>
+            <p style="color: #666;text-align: left;">1. Choose your ECG image file using the upload button below.</p>
+            <p style="color: #666;text-align: left;">2. Click the "Upload" button to submit the image for analysis.</p>
+            <p style="color: #666;text-align: left;">3. Please note that our model's accuracy is approximately 87.67%. However, this is just a prediction, and you should not rely solely on its results for medical decisions.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" style="margin-bottom: 20px;">
+            <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;">Upload</button>
+        </form>
+    </div>
+
+
+
+ 
+    <!-- <div class="container">
+        <h1>Analyze your ECG with our AI model</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+    </div> -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>If you have any queries, please feel free to contact us:</p>
+                <ul>
+                    <li>Email: info@examplehospital.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>Address: 123 Hospital Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="chat-widget">
+                <!-- Embedded chat widget code goes here -->
+                <!-- Replace the placeholder with your chat widget code -->
+                <div id="chat-widget-placeholder">
+                    <!-- Example placeholder content -->
+                    Chat Widget Placeholder
+                </div>
+            </div>
+            <div class="map">
+                <!-- Embedded map code goes here -->
+                <!-- Replace the placeholder with your map code -->
+                <div id="map-placeholder">
+                    <!-- Example placeholder content -->
+                    Map Placeholder
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+</body>
 </html>
+
