@@ -32,6 +32,36 @@
 #     return image
 
 
+# import cv2
+# import numpy as np
+
+# def preprocess_image(filepath, target_size=(64, 64)):
+#     # Load the image using OpenCV
+#     image = cv2.imread(filepath)
+#     # Resize the image to the specified target size
+#     image = cv2.resize(image, target_size)
+#     # Convert the image to an array
+#     x = np.array(image)
+#     # Expand the dimensions of the image
+#     x = np.expand_dims(x, axis=0)
+#     return x
+# import cv2
+# import numpy as np
+
+# def preprocess_image(filepath, target_size=(64, 64)):
+#     # Load the image using OpenCV
+#     image = cv2.imread(filepath)
+#     # Resize the image to the specified target size
+#     image = cv2.resize(image, target_size)
+#     # Convert the image to grayscale
+#     image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#     # Reshape the image to have a single channel
+#     x = np.expand_dims(image_gray, axis=-1)
+#     # Expand the dimensions of the image to match the input shape expected by the model
+#     x = np.expand_dims(x, axis=0)
+#     return x
+
+
 import cv2
 import numpy as np
 
@@ -39,9 +69,9 @@ def preprocess_image(filepath, target_size=(64, 64)):
     # Load the image using OpenCV
     image = cv2.imread(filepath)
     # Resize the image to the specified target size
-    image = cv2.resize(image, target_size)
-    # Convert the image to an array
-    x = np.array(image)
-    # Expand the dimensions of the image
+    image_resized = cv2.resize(image, target_size)
+    # Convert the image to float32 and rescale it to [0, 1]
+    x = image_resized.astype(np.float32) / 255.0
+    # Expand the dimensions of the image to match the input shape expected by the model
     x = np.expand_dims(x, axis=0)
     return x

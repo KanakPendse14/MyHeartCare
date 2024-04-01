@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+
+
+    <h2 style="color: #333; font-size: 24px; margin-bottom: 20px; text-align: left;">Instructions:</h2>
+    <p style="color: #666; text-align: left;">1. Fill in the required information including age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise induced angina, ST depression induced by exercise relative to rest, slope of the peak exercise ST segment, number of major vessels colored by fluoroscopy, and thal.</p>
+    <p style="color: #666; text-align: left;">3. Please note that our model's accuracy is approximately 87.67%. However, this is just a prediction, and you should not rely solely on its results for medical decisions.</p>
+    <p><strong>Value 0:</strong> typical angina</p>
+    <p><strong>Value 1:</strong> atypical angina</p>
+    <p><strong>Value 2:</strong> non-anginal pain</p>
+    <p><strong>Value 3:</strong> asymptomatic</p>
+</div><br>
+    
+    <form action="" method="post">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br>
+        
+        <label for="sex">Sex (0 for female, 1 for male):</label><br>
+        <input type="number" id="sex" name="sex" min="0" max="1" required><br>
+        
+        <label for="cp">Chest Pain Type:</label><br>
+        <input type="number" id="cp" name="cp" required><br>
+        <div class="cp-description">
+
+        
+        <label for="trestbps">Resting Blood Pressure:</label><br>
+        <input type="number" id="trestbps" name="trestbps" required><br>
+        
+        <label for="chol">Serum Cholesterol (mg/dl):</label><br>
+        <input type="number" id="chol" name="chol" required><br>
+        
+        <label for="fbs">Fasting Blood Sugar (> 120 mg/dl, 0 for false, 1 for true):</label><br>
+        <input type="number" id="fbs" name="fbs" min="0" max="1" required><br>
+        
+        <label for="restecg">Resting Electrocardiographic Results:</label><br>
+        <input type="number" id="restecg" name="restecg" required><br>
+        
+        <label for="thalach">Maximum Heart Rate Achieved:</label><br>
+        <input type="number" id="thalach" name="thalach" required><br>
+        
+        <label for="exang">Exercise Induced Angina (0 for no, 1 for yes):</label><br>
+        <input type="number" id="exang" name="exang" min="0" max="1" required><br>
+        
+        <label for="oldpeak">ST Depression Induced by Exercise Relative to Rest:</label><br>
+        <input type="number" id="oldpeak" name="oldpeak" required><br>
+        
+        <label for="slope">Slope of the Peak Exercise ST Segment:</label><br>
+        <input type="number" id="slope" name="slope" required><br>
+        
+        <label for="ca">Number of Major Vessels (0-3) Colored by Flourosopy:</label><br>
+        <input type="number" id="ca" name="ca" min="0" max="3" required><br>
+        
+        <label for="thal">Thal:</label><br>
+        <input type="number" id="thal" name="thal" required><br>
+        <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;">Upload</button>
+        <!-- <input type="submit" value="Predict"> -->
+
+
+        {% if result %}
+        <h2>Prediction Result: {{ result }}</h2>
+        {% endif %}
+    </form>
+</body>
+</html>
